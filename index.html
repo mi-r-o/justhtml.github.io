@@ -3,9 +3,13 @@
 <head>
 <title>Rock Paper Scissors</title>
 <style>
+    .container {
+      text-align: center;
+    }
+
   p {
     font-family: arial;
-    font-size: large;
+    font-size: 40px;
     font-weight: bold;
     color: rgb(200, 100, 0);
   }
@@ -17,7 +21,7 @@ button {
   height: 90px;
   padding-left:10px;
   padding-right: 10px;
-  font-size: 15px;
+  font-size: 30px;
   transition: 0.3s;
   align-items: center;
   display: inline-flex;
@@ -32,6 +36,7 @@ button:hover {
 </style>
 </head>
 <body>
+  <div class="container">
   <p>Rock Paper Scissors</p>
 <button id="rock"
 onclick="
@@ -117,6 +122,6 @@ else if (computerMove === 'Scissors✌️') {
 }
 alert(`You choose Scissors✌️. computer choose ${computerMove}. ${result}`)
 ">Scissors✌️</button>
-
+</div>
 </body>
 </html>
